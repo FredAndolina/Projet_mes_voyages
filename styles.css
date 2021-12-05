@@ -1,0 +1,45 @@
+/* Variables declaration*/
+:root{
+    --main-color: #5d2929;
+  }
+
+
+/* body */
+body{
+    margin:0;
+}
+
+.NY{
+    width: 100%;
+    height:  300px;
+}
+
+.nav{
+    display: inline-block;
+    background-color: var(--main-color);
+    width: 400px;
+    height: 50px;
+    z-index: 2;
+    margin: 100px 0 0 0;
+    position: fixed;
+}
+.content{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height:  300px;
+}
+ul, il{
+    list-style-type: none; 
+    display: inline;
+    color: white;
+}
+
+.cont{
+    background-color: var(--main-color);
+    z-index: 3;
+}
+/* Fisrt section "Last Articles" */
+.lastArticle{
+    font-size: 50px;
+}
