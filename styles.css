@@ -29,17 +29,101 @@ body{
     width: 100%;
     height:  300px;
 }
-ul, il{
+li{
     list-style-type: none; 
     display: inline;
+   
+
+}
+ul{
+    display: flex;
+    justify-content: space-around;
     color: white;
+    text-decoration: none;
+}
+
+.pensee{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    background-color: var(--main-color);
+    margin: 0;
+    padding: 40px 0;
+    border-bottom: black solid 15px;
+}
+/* Fisrt section "Last Articles" */
+.travel, .trip{
+    opacity: 0.2;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: black solid 15px;
+}
+.lastArticle{
+    margin: 0;
+    background: url(./images/Mont-Blanc.png) no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: black solid 15px;
+}
+
+p{
+    font-size: 12px;
+}
+
+/* Footer */
+ .footertitle{
+    padding: 30px 0;
+    font-size: 30px;
+    text-align: center;
+}
+.footColor{ 
+    color: white;
+    background-color: #0c5d56;
+    width: 100%;
+    height: 600px;   
+}
+.partage{
+    display: flex;
+    justify-content: space-around;
+}
+.partagez{
+    width: 250px;
+    height: 500px;
+}
+
+.contact{
+    width: 400px;
+    height: 500px;
+}
+
+#name{
+    color: black;
 }
 
 .cont{
-    background-color: var(--main-color);
-    z-index: 3;
+    margin: 20px 0 0 0;
 }
-/* Fisrt section "Last Articles" */
-.lastArticle{
-    font-size: 50px;
+
+.contactUs{
+    margin: 40px 0 40px 0;
 }
+.contactUs1{
+    margin: 40px 0 40px 0;
+}
+
+.cards{
+    border-right: solid 2px grey;
+    background-color: white;
+    width: 330px;
+    height: 350px;
+    border-radius: 10%;
+    z-index: 2;
+}
+
+.cards .imgMadere{
+    width: 250px;
+    height: auto;
+   
+}
+
