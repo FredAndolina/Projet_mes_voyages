@@ -1,6 +1,7 @@
 /* Variables declaration*/
 :root{
-    --main-color: #5d2929;
+    --main-color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
 
@@ -9,7 +10,7 @@ body{
     margin:0;
 }
 
-.NY{
+.NY{position: absolute;
     width: 100%;
     height:  300px;
 }
@@ -21,7 +22,7 @@ body{
     height: 50px;
     z-index: 2;
     margin: 100px 0 0 0;
-    position: fixed;
+    
 }
 .content{
     display: flex;
@@ -59,16 +60,23 @@ ul{
     border-bottom: black solid 15px;
 }
 .lastArticle{
+    background: linear-gradient(white, rgb(230, 228, 228));
     margin: 0;
-    background: url(./images/Mont-Blanc.png) no-repeat;
     background-size: cover;
     font-size: 30px;
     text-align: center;
     border-bottom: black solid 15px;
+    height: 800px;
 }
+ .lastArticles{
+     text-align: center;
+     margin: 0;
+     padding: 50px;
+ }
 
 p{
     font-size: 12px;
+    padding: 0 15px;
 }
 
 /* Footer */
@@ -81,17 +89,21 @@ p{
     color: white;
     background-color: #0c5d56;
     width: 100%;
-    height: 600px;   
+    height: 500px;   
 }
 .partage{
     display: flex;
     justify-content: space-around;
 }
 .partagez{
-    width: 250px;
+    font-size: 40px;
+    width: 500px;
     height: 500px;
+    text-align: center;
 }
-
+h4{
+    margin: 0;
+}
 .contact{
     width: 400px;
     height: 500px;
@@ -105,25 +117,87 @@ p{
     margin: 20px 0 0 0;
 }
 
-.contactUs{
-    margin: 40px 0 40px 0;
-}
 .contactUs1{
-    margin: 40px 0 40px 0;
-}
+   margin-bottom: 40px;
+    }
 
 .cards{
     border-right: solid 2px grey;
     background-color: white;
     width: 330px;
-    height: 350px;
+    height: 450px;
     border-radius: 10%;
     z-index: 2;
+    box-shadow: 0 70px 63px -60px black;
+   
 }
+
 
 .cards .imgMadere{
     width: 250px;
     height: auto;
-   
+    box-shadow: 0 30px 30px -30px black;
+    padding: 20px 0 0 0;
+}
+.imgMadere{
+    opacity: 0.5;
+}
+.imgMadere:hover{
+    width: 280px;
+    height: auto;
+    box-shadow: 0 30px 30px -30px black;
+    opacity: 1;
+}
+.flexCard{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
 }
 
+.titleImage{
+    padding: 13px 0;
+}
+.mont{
+    width: 100%;
+    height: 300px;
+    opacity: 0.3;
+}
+
+.date{
+    color: var(--main-color);
+    font-size: 25px;
+    margin: 30px 0 0 0;
+}
+
+@media screen and (max-width: 1225px){
+    .flexCard{
+        height: 1450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .lastArticle{
+        height: 1800px;
+    } 
+}
+
+@media screen and (max-width: 979px){
+    .footColor{
+        height: 1100px;
+    }
+      .partage{
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .partagez{
+        width: 500px;
+        height: auto;
+    }
+    .footertitle{
+        margin: 0 30px;
+    }
+ }
