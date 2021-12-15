@@ -66,7 +66,7 @@ a {
 }
 
 .lastArticle {
-    /* background: linear-gradient(white, rgb(148, 147, 147)); */
+
     margin: 0;
     background-size: cover;
     font-size: 30px;
@@ -268,8 +268,4 @@ span {
 
 .repas{
     border-radius: 50%;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> eea3b7983b184e5d07112eacde48431e2dab0cf4
