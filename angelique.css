@@ -26,15 +26,6 @@ body{
 }
 
 
-/* #fondEcran {
-    /* Fixe l'image en haut à gauche de la page */
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    /* Préserve le ratio de l'image */
-    min-width: 100%;
-    min-height: 100%;
-   } */
 
 
    ul, il{
@@ -66,7 +57,6 @@ body{
    .tabs-content{
     margin: 20px 0 0 0;
     padding: 20px;
-    border: black solid 2px;
     background-color: red;
     width: 800px;
     height: 300px;
@@ -84,4 +74,24 @@ body{
    h1{
        font-size: 40px ;
    }
+
+/* blond */
+.blond, .brun{
+    margin: 20px 0 0 0;
+    display: none;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+
+.red{
+    color: red;
+}
+.photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+ 
 

@@ -25,3 +25,17 @@ for(let i = 0; i < tabs.length; i++){
         div.querySelector(this.getAttribute("href")).classList.add("active")
     })
 }
+
+
+const blond = document.querySelector(".blond")
+const brun = document.querySelector(".brun")
+// const blond = document.createElement
+const buttonBlond = document.querySelector("#crl")
+
+buttonBlond.addEventListener("click", function(){
+blond.style.display = "block";
+brun.style.display = "block";
+})
+
+
+    
