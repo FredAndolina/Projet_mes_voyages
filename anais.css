@@ -1,0 +1,119 @@
+body{
+    background: url(./Images-Anais/mairie.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tab-content{
+    display: none;
+}
+
+.tab-content.active{
+    display: inline-block;
+}
+
+.tabs   .active a{
+    color: red;
+}
+/* Mise en page */
+
+body{
+    font-family: sans-serif;
+    padding: 50px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+   ul, il{
+       margin: 0;
+       padding: 0;
+       list-style: none;
+   }
+
+   .tabs li{
+       display: inline;
+   }
+
+   .tabs a{
+       display: inline-block;
+       background-color: rgb(236, 230, 230);
+       box-shadow: 0 1px 3px black, 0 1px 3px grey ;
+       padding: 10px 15px;
+   }
+
+   a{
+       text-decoration: none;
+       color: black ;
+   }
+
+   .tabs .active a{
+       background-color: white;
+   }
+
+   .tabs-content{
+    margin: 20px 0 0 0;
+    padding: 20px;
+    background-color:white;
+    width: 600px;
+    height: 400px;
+    /* background: linear-gradient(white, rgb(224, 215, 215)); */
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    font-family: 20px;
+    color: grey;
+    text-align: center;
+    border-radius: 25px;
+   }
+
+   h1{
+       font-size: 35px ;
+   }
+
+/* blond */
+.driver, .travel, .collation{
+    margin: 20px 0 0 0;
+    display: none;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+
+
+.photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+ 
+/* valises  */
+
+.valise{
+    background-image: url(./Angelique-images/Valise-fermee.jpg);
+    margin: 20px 0 0 0;
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+}
+
+.valise:hover{
+    background-image: url(./Images-Anais/valise-anais.jpeg);
+    margin: 20px 0 0 0;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+}
+
+.image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    font-family: 20px;
+    margin: 20px;
+}
