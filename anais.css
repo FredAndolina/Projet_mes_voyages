@@ -67,16 +67,9 @@ body{
     border-radius: 25px;
    }
 
-   h3{
-       font-size: 35px ;
-       color: blue;
-   }
-
-
    h1{
-    font-size: 45px ;
-    color: red;
-}
+       font-size: 35px ;
+   }
 
 /* agence de voyage */
 .driver, .travel, .collation, .hotel, .etiquette, .bleu, .rose, .autre{
@@ -146,30 +139,4 @@ body{
     -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
     -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
     border-radius: 25%;
-}
-
-.myButton {
-	box-shadow: 0px 10px 14px -7px #276873;
-	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-	background-color:#599bb3;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:3px 3px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #3d768a;
-    width: auto;
-    height: 40px;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-	background-color:#408c99;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
 }
