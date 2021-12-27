@@ -55,8 +55,8 @@ body{
     margin: 20px 0 0 0;
     padding: 20px;
     background-color:white;
-    width: 600px;
-    height: 400px;
+    width: 900px;
+    height: 550px;
     /* background: linear-gradient(white, rgb(224, 215, 215)); */
     box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
     -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
@@ -67,26 +67,29 @@ body{
     border-radius: 25px;
    }
 
-   h1{
+   h3{
        font-size: 35px ;
+       color: blue;
    }
 
-/* blond */
-.driver, .travel, .collation{
-    margin: 20px 0 0 0;
+
+   h1{
+    font-size: 45px ;
+    color: red;
+}
+
+/* agence de voyage */
+.driver, .travel, .collation, .hotel, .etiquette, .bleu, .rose, .autre{
+    margin: 10px 0 0 0;
     display: none;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     background-size: cover;
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
 }
 
-
-.photos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
  
 /* valises  */
 
@@ -106,14 +109,67 @@ body{
     background-size: cover;
 }
 
-.image{
+.image, .imageHotel{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: center;
     box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
     -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
     -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
     font-family: 20px;
-    margin: 20px;
+    margin: 60px 0 0 0;
+    width: 900px;
+    height: 350px;
+}
+
+.covid{
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    width: 100px;
+    height: 150px;
+    opacity: 0.5;
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+}
+
+.etiquette{
+    position: absolute;
+    top: 300px;
+    left: 1036px;
+    width: 300px;
+    height: 150px;
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    border-radius: 25%;
+}
+
+.myButton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:3px 3px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+    width: auto;
+    height: 40px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
