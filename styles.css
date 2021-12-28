@@ -18,12 +18,11 @@ body {
 
 .nav {
     display: inline-block;
-    background-color: var(--main-color);
+    background-color: #0c5d56;
     width: 400px;
     height: 50px;
     z-index: 2;
     margin: 100px 0 0 0;
-
 }
 
 .content {
@@ -51,10 +50,10 @@ a {
     font-size: 30px;
     color: white;
     text-align: center;
-    background-color: var(--main-color);
+    background-color: #0c5d56;
     margin: 0;
     padding: 40px 0;
-    border-bottom: black solid 15px;
+    border-bottom: black solid 10px;
 }
 
 /* Fisrt section "Last Articles" */
@@ -62,7 +61,7 @@ a {
     opacity: 0.2;
     font-size: 30px;
     text-align: center;
-    border-bottom: black solid 15px;
+   
 }
 
 .lastArticle {
@@ -71,7 +70,7 @@ a {
     background-size: cover;
     font-size: 30px;
     text-align: center;
-    border-bottom: black solid 15px;
+   
     height: 800px;
 }
 
