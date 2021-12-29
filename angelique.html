@@ -10,32 +10,40 @@
 </head>
 
 <body>
-    
+    <button id="return">RETOUR</button>
     <!-- <img class="fondEcran" src="./Images/TGV.jpg" alt=""> -->
     <div class="content">
         <ul class="tabs">
-            <li class="active"><a href="#agence">Agence de voyage</a></li>
-            <li><a href="#accomodation">l'hôtel</a></li>
-            <li><a href="#suitcases">Valises</a></li>
-            <li><a href="#excursion">Annonce</a></li>
-            <li><a href="#age">ORFEA</a></li>
+            <li class="active"><a href="#agence">Voyage</a></li>
+            <li><a href="#accomodation">Valises</a></li>
+            <li><a href="#suitcases">ORFEA</a></li>
+
         </ul>
         <div class="tabs-content">
             <div class="tab-content active" id="agence">
-                <h1 class="red">AGENCE DE VOYAGE</h1>
+                <h1 class="red">Voyage en cabine de conduite d'un train</h1>
                 <button id="crl">Conducteurs</button>
+                <button id="choix">Choix</button>
+
                 <div class="photos">
                     <img class="blond" src="./Angelique-images/blond.jpg" alt="Blond">
                     <img class="brun" src="./Angelique-images/brun.jpg" alt="Brun">
+                    <video class="choixA" controls width="250">
+                        <source  src="./Roue/BlondBrun.mp4" type="video/mp4">
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
                 </div>
             </div>
             <div class="tab-content" id="accomodation">
-                <h1>HÔTEL</h1>
+                <h1>VALISES</h1>
+                <div class="valise">
+                    <img class="valiseA" alt="Valise d'Alban">
+                    <button id="addOn">Téléchargement Add ons</button>
+                    <img class="train" src="./Angelique-images/train.jpeg" alt="Petit train">
+                </div>
             </div>
             <div class="tab-content" id="suitcases">
-                <h1>VALISES</h1>
-                <img class="valise" alt="">
-                <!-- <img class="valise" src="./Angelique-images/valise-Alban.jpeg" alt="valise Alban"> -->
+                <h1>ORFEA</h1>
 
             </div>
             <div class="tab-content" id="excursion">

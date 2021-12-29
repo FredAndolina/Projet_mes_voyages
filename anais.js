@@ -20,8 +20,6 @@ for (let i = 0; i < tabs.length; i++) {
     })
 }
 
-const city = document.querySelector(".city")
-city.style.color = "red"
 
 
 const buttonTravel = document.querySelector("#travel")
@@ -32,6 +30,10 @@ const buttonCovid = document.querySelector("#collier")
 const buttonBleu = document.querySelector("#covidBleu")
 const buttonRose = document.querySelector("#covidRose")
 const buttonAutre = document.querySelector("#covidAutre")
+const buttonBarbecue = document.querySelector("#barbecue")
+const buttonTerre = document.querySelector("#terre")
+const buttonEtiquette2 = document.querySelector("#etiquette2")
+const buttonAge = document.querySelector("#age")
 
 
 
@@ -44,7 +46,33 @@ const etiquette = document.querySelector(".etiquette")
 const bleu = document.querySelector(".bleu")
 const rose = document.querySelector(".rose")
 const autre = document.querySelector(".autre")
+const barbecue = document.querySelector(".barbecue")
+const terre = document.querySelector(".terre")
+const etiquette2 = document.querySelector(".etiquette2")
+const cadavre = document.querySelector(".cadavre")
+const van = document.querySelector(".van")
+const retour = document.querySelector("#return")
 
+
+
+etiquette2.addEventListener("mouseover", function () {
+    etiquette2.src = "./Images-Anais/cadavre.jpeg"
+})
+etiquette2.addEventListener("mouseleave", function () {
+    etiquette2.src = "./Images-Anais/etiquette.jpeg";
+})
+buttonEtiquette2.addEventListener("click", function () {
+    etiquette2.style.display = "block";
+    terre.style.display = "none";
+    barbecue.style.display = "none";
+})
+buttonTerre.addEventListener("click", function () {
+    terre.style.display = "block";
+    barbecue.style.display = "none";
+})
+buttonBarbecue.addEventListener("click", function () {
+    barbecue.style.display = "block";
+})
 
 buttonBleu.addEventListener("click", function () {
     bleu.style.display = "block";
@@ -54,6 +82,8 @@ buttonRose.addEventListener("click", function () {
 })
 buttonAutre.addEventListener("click", function () {
     autre.style.display = "block";
+    rose.style.display = "none";
+    bleu.style.display = "none";
 })
 
 
@@ -69,6 +99,8 @@ buttonTravel.addEventListener("click", function () {
 
 buttonDriver.addEventListener("click", function () {
     driver.style.display = "block";
+    van.style.display = "block";
+    travel.style.display = "none"
 })
 
 buttonCollation.addEventListener("click", function () {
@@ -78,6 +110,19 @@ buttonCollation.addEventListener("click", function () {
 buttonHotel.addEventListener("click", function () {
     hotel.style.display = "block";
 })
+ 
+
+buttonAge.addEventListener("click", function () {
+    let age = prompt("Quel âge as-tu ma petite Anais?");
+    console.log("click")
+    if(age <= 13){ alert("Prépare toi pour ton voyage")}
+else{alert("Je suis dans l'obligation de fermer la page");
+location.href = "./page404.html"}}
+)
+retour.addEventListener("click", function () {
+location.href = "./Vacance-a-la-carte.html"}
+)
+
 // const blond = document.querySelector(".blond")
 // const brun = document.querySelector(".brun")
 // // const blond = document.createElement

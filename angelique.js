@@ -29,22 +29,29 @@ for(let i = 0; i < tabs.length; i++){
 
 const blond = document.querySelector(".blond")
 const brun = document.querySelector(".brun")
-// const blond = document.createElement
+const choix = document.querySelector("#choix")
+
 const buttonBlond = document.querySelector("#crl")
+const buttonTrain = document.querySelector("#addOn")
+const train = document.querySelector(".train")
+const choixA = document.querySelector(".choixA")
+
 
 buttonBlond.addEventListener("click", function(){
 blond.style.display = "block";
 brun.style.display = "block";
 })
 
+buttonTrain.addEventListener("click", function(){
+    train.style.display = "block";
+    })
 
-var isPalindrome = function (string) {
-    if (string == string.split('').reverse().join('')) {
-        alert(string + ' is palindrome.');
-    }
-    else {
-        alert(string + ' is not palindrome.');
-    }
-}
+    const retour = document.querySelector("#return")
 
-console.log(isPalindrome(affa))
+    retour.addEventListener("click", function () {
+        location.href = "./Vacance-a-la-carte.html"}
+        )
+
+    choix.addEventListener("click", function () {
+        choixA.style.display= "block"}
+            )        
