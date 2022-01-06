@@ -22,7 +22,7 @@ for (let i = 0; i < tabs.length; i++) {
 
 
 
-const buttonTravel = document.querySelector("#travel")
+
 const buttonDriver = document.querySelector("#driver")
 const buttonCollation = document.querySelector("#collation")
 const buttonHotel = document.querySelector("#hotel")
@@ -91,9 +91,10 @@ buttonCovid.addEventListener("click", function () {
     etiquette.style.display = "block";
 })
 
-
+const buttonTravel = document.querySelector("#travel")
 
 buttonTravel.addEventListener("click", function () {
+    
     travel.style.display = "block";
 })
 
@@ -115,8 +116,8 @@ buttonHotel.addEventListener("click", function () {
 buttonAge.addEventListener("click", function () {
     let age = prompt("Quel âge as-tu ma petite Anais?");
     console.log("click")
-    if(age <= 13){ alert("Prépare toi pour ton voyage")}
-else{alert("Je suis dans l'obligation de fermer la page");
+    if(age <= 13){ alert("Prépare-toi pour ton voyage")}
+else{alert("Tu es trop vielle Annais je suis dans l'obligation de fermer la page");
 location.href = "./page404.html"}}
 )
 retour.addEventListener("click", function () {
@@ -136,14 +137,16 @@ location.href = "./Vacance-a-la-carte.html"}
 //Questions
 const button0 = document.querySelector(".btn0")
 
+
 button0.addEventListener('click', function () {
     const firstQuestion = document.querySelector(".firstQuestion")
     const newCard = document.createElement("div")
-    const question1 = prompt ("Quel est ton blog de voyage préféré ?")
+    const question1 = prompt ("Quel est ton département préféré ?")
     newCard.classList.add("first")
-    newCard.textContent = "Quel est ton blog de voyage préféré ? : " + question1
+    newCard.textContent = "Quel est ton département préféré ? : " + question1
     firstQuestion.appendChild(newCard)
     button0.style.display ="none"
+    ardennes.style.display="block"
 })
 
 const button4 = document.querySelector(".btn4")
@@ -163,9 +166,9 @@ const button1 = document.querySelector(".btn1")
 button1.addEventListener('click', function () {
     const firstQuestion = document.querySelector(".firstQuestion")
     const newCard = document.createElement("div")
-    const question1 = prompt ("Quelle est ton département préférée ?")
+    const question1 = prompt ("Aimes-tu les ballades en forêt ?")
     newCard.classList.add("first")
-    newCard.textContent = "Quelle est ta région préférée ? : " + question1
+    newCard.textContent = "Aimes-tu les ballades en forêt ? : " + question1
     firstQuestion.appendChild(newCard)
     button1.style.display ="none"
 })
@@ -175,16 +178,33 @@ const button2 = document.querySelector(".btn2")
 button2.addEventListener('click', function () {
     const firstQuestion = document.querySelector(".firstQuestion")
     const newCard = document.createElement("div")
-    const question1 = prompt ("Où prefères-tu te ballader ?")
+    const question1 = prompt ("Es-tu prêtes pour partir en vacances sans ton mari ?")
     newCard.classList.add("first")
-    newCard.textContent = "Où prefères-tu te ballader ? : " + question1
+    newCard.textContent = "Es-tu prêtes pour partir en vacances sans ton mari ? : " + question1
     firstQuestion.appendChild(newCard)
     button2.style.display ="none"
 })
 
-// const fred = document.querySelector(".div0")
 
 
-// fred.addEventListener('click',function(){
-//     div0.style.collor = "red"
+// const x = document.getElementById("new");
+// const y = document.getElementById("demo");
+
+
+// x.addEventListener("change", function(event){ 
+
+//     if(event.target.value === "Oui")
+//     y.innerHTML = event.target.value
+// ;
+// else if(event.target.value === "Non")
+//     y.innerHTML = event.target.value
 // })
+
+const ardennes = document.querySelector(".ardennes")
+
+ardennes.addEventListener('mouseover', function () {
+    ardennes.src = "./Images-Anais/doigt.jpeg"
+})
+ardennes.addEventListener('mouseleave', function () {
+    ardennes.src = "./Images-Anais/Carte-les-ardennes.jpeg"
+})
