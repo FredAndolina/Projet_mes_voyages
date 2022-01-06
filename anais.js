@@ -133,13 +133,58 @@ location.href = "./Vacance-a-la-carte.html"}
 // brun.style.display = "block";
 // })
 
-// var isPalindrome = function (string) {
-//     if (string == string.split('').reverse().join('')) {
-//         alert(string + ' is palindrome.');
-//     }
-//     else {
-//         alert(string + ' is not palindrome.');
-//     }
-// }
+//Questions
+const button0 = document.querySelector(".btn0")
 
-// console.log(isPalindrome(affa))
+button0.addEventListener('click', function () {
+    const firstQuestion = document.querySelector(".firstQuestion")
+    const newCard = document.createElement("div")
+    const question1 = prompt ("Quel est ton blog de voyage préféré ?")
+    newCard.classList.add("first")
+    newCard.textContent = "Quel est ton blog de voyage préféré ? : " + question1
+    firstQuestion.appendChild(newCard)
+    button0.style.display ="none"
+})
+
+const button4 = document.querySelector(".btn4")
+
+button4.addEventListener('click', function () {
+    const firstQuestion = document.querySelector(".firstQuestion")
+    const newCard = document.createElement("div")
+    const question1 = prompt ("Aimes-tu la solitude ?")
+    newCard.classList.add("first")
+    newCard.textContent = "Aimes-tu la solitude ? : " + question1
+    firstQuestion.appendChild(newCard)
+    button4.style.display ="none"
+})
+
+const button1 = document.querySelector(".btn1")
+
+button1.addEventListener('click', function () {
+    const firstQuestion = document.querySelector(".firstQuestion")
+    const newCard = document.createElement("div")
+    const question1 = prompt ("Quelle est ton département préférée ?")
+    newCard.classList.add("first")
+    newCard.textContent = "Quelle est ta région préférée ? : " + question1
+    firstQuestion.appendChild(newCard)
+    button1.style.display ="none"
+})
+
+const button2 = document.querySelector(".btn2")
+
+button2.addEventListener('click', function () {
+    const firstQuestion = document.querySelector(".firstQuestion")
+    const newCard = document.createElement("div")
+    const question1 = prompt ("Où prefères-tu te ballader ?")
+    newCard.classList.add("first")
+    newCard.textContent = "Où prefères-tu te ballader ? : " + question1
+    firstQuestion.appendChild(newCard)
+    button2.style.display ="none"
+})
+
+// const fred = document.querySelector(".div0")
+
+
+// fred.addEventListener('click',function(){
+//     div0.style.collor = "red"
+// })
