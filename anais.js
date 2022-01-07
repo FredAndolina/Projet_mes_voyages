@@ -117,24 +117,13 @@ buttonAge.addEventListener("click", function () {
     let age = prompt("Quel âge as-tu ma petite Anais?");
     console.log("click")
     if(age <= 13){ alert("Prépare-toi pour ton voyage")}
-else{alert("Tu es trop vielle Annais je suis dans l'obligation de fermer la page");
+else{alert("Tu es trop vielle Anais je suis dans l'obligation de fermer la page");
 location.href = "./page404.html"}}
 )
 retour.addEventListener("click", function () {
 location.href = "./Vacance-a-la-carte.html"}
 )
 
-// const blond = document.querySelector(".blond")
-// const brun = document.querySelector(".brun")
-// // const blond = document.createElement
-// const buttonBlond = document.querySelector("#crl")
-
-// buttonBlond.addEventListener("click", function(){
-// blond.style.display = "block";
-// brun.style.display = "block";
-// })
-
-//Questions
 const button0 = document.querySelector(".btn0")
 
 
@@ -154,9 +143,9 @@ const button4 = document.querySelector(".btn4")
 button4.addEventListener('click', function () {
     const firstQuestion = document.querySelector(".firstQuestion")
     const newCard = document.createElement("div")
-    const question1 = prompt ("Aimes-tu la solitude ?")
+    const question1 = prompt ("Aimes-tu être seule ?")
     newCard.classList.add("first")
-    newCard.textContent = "Aimes-tu la solitude ? : " + question1
+    newCard.textContent = "Aimes-tu être seule ? : " + question1
     firstQuestion.appendChild(newCard)
     button4.style.display ="none"
 })
@@ -166,9 +155,9 @@ const button1 = document.querySelector(".btn1")
 button1.addEventListener('click', function () {
     const firstQuestion = document.querySelector(".firstQuestion")
     const newCard = document.createElement("div")
-    const question1 = prompt ("Aimes-tu les ballades en forêt ?")
+    const question1 = prompt ("Quel est le nom de ton village?")
     newCard.classList.add("first")
-    newCard.textContent = "Aimes-tu les ballades en forêt ? : " + question1
+    newCard.textContent = "Quel est le nom de ton village ? : " + question1
     firstQuestion.appendChild(newCard)
     button1.style.display ="none"
 })
@@ -178,9 +167,9 @@ const button2 = document.querySelector(".btn2")
 button2.addEventListener('click', function () {
     const firstQuestion = document.querySelector(".firstQuestion")
     const newCard = document.createElement("div")
-    const question1 = prompt ("Es-tu prêtes pour partir en vacances sans ton mari ?")
+    const question1 = prompt ("Où aimes-tu te ballader ?")
     newCard.classList.add("first")
-    newCard.textContent = "Es-tu prêtes pour partir en vacances sans ton mari ? : " + question1
+    newCard.textContent = "Où aimes-tu te ballader  ? : " + question1
     firstQuestion.appendChild(newCard)
     button2.style.display ="none"
 })
@@ -206,5 +195,12 @@ ardennes.addEventListener('mouseover', function () {
     ardennes.src = "./Images-Anais/doigt.jpeg"
 })
 ardennes.addEventListener('mouseleave', function () {
-    ardennes.src = "./Images-Anais/Carte-les-ardennes.jpeg"
+    ardennes.src = "./Images-Anais/Carte-les-ardennes.jpg"
+})
+
+const algo1 = document.querySelector(".algo1")
+const tabContent = document.querySelector(".tabs-content")
+
+algo1.addEventListener('click', function () {
+    tabContent.style.display = "block"
 })

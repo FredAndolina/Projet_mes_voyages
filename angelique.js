@@ -7,12 +7,12 @@ j'ajoute la class  active sur le contenu correspondant à mon click */
 
 let tabs = document.querySelectorAll('.tabs a')
 
-for(let i = 0; i < tabs.length; i++){
+for (let i = 0; i < tabs.length; i++) {
     tabs[i].addEventListener("click", function (e) {
-         const li = this.parentNode
-         const div = this.parentNode.parentNode.parentNode
+        const li = this.parentNode
+        const div = this.parentNode.parentNode.parentNode
 
-        if(li.classList.contains('active')){
+        if (li.classList.contains('active')) {
             return false
         }
         // ON RETIRE la class active de l'onglet actif
@@ -26,32 +26,43 @@ for(let i = 0; i < tabs.length; i++){
     })
 }
 
-
-const blond = document.querySelector(".blond")
-const brun = document.querySelector(".brun")
-const choix = document.querySelector("#choix")
-
-const buttonBlond = document.querySelector("#crl")
-const buttonTrain = document.querySelector("#addOn")
-const train = document.querySelector(".train")
-const choixA = document.querySelector(".choixA")
+const compagnie = document.getElementById("compagnie")
+const france = document.querySelector(".france")
+const canada = document.querySelector(".canada")
+const senior = document.querySelector(".senior")
+const color = document.querySelector(".paiement")
+const carteBleue = document.querySelector(".popup")
 
 
-buttonBlond.addEventListener("click", function(){
-blond.style.display = "block";
-brun.style.display = "block";
+
+compagnie.addEventListener("change", function (event) {
+    france.style.display = "none"
+    canada.style.display = "none"
+    senior.style.display = "none"
+    color.style.backgroundColor = "rgb(228, 227, 227)";
+
+    // senior.style.display = "none"
+
+    if (event.target.value === "airFrance") {
+        france.style.display = "block";
+        color.style.backgroundColor = "black";
+    } else if (event.target.value === "airCanada") {
+        canada.style.display = "block";
+        color.style.backgroundColor = "black"
+    } else if (event.target.value === "seniors") {
+        senior.style.display = "block";
+        color.style.backgroundColor = "black"
+    }
 })
 
-buttonTrain.addEventListener("click", function(){
-    train.style.display = "block";
-    })
+color.addEventListener("click", function(){
+    alert("Il ya un problème avec votre carte bleue. ")
+    carteBleue.style.display = "block"
+})
 
-    const retour = document.querySelector("#return")
+const planB = document.getElementById("planB")
 
-    retour.addEventListener("click", function () {
-        location.href = "./Vacance-a-la-carte.html"}
-        )
-
-    choix.addEventListener("click", function () {
-        choixA.style.display= "block"}
-            )        
+planB.addEventListener("click", function(){
+    location.href = "./anais.html"
+}
+)

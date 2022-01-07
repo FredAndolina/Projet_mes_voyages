@@ -14,47 +14,81 @@
     <!-- <img class="fondEcran" src="./Images/TGV.jpg" alt=""> -->
     <div class="content">
         <ul class="tabs">
-            <li class="active"><a href="#agence">Voyage</a></li>
-            <li><a href="#accomodation">Valises</a></li>
-            <li><a href="#suitcases">ORFEA</a></li>
+            <li class="active"><a href="#agence">Canada</a></li>
+            <li><a href="#accomodation">Vol</a></li>
+            <li><a href="#suitcases">Excursions</a></li>
 
         </ul>
         <div class="tabs-content">
+            <img class="drapeau" src="./Ched/drapeau.png" alt="drapeau canada">
             <div class="tab-content active" id="agence">
-                <h1 class="red">Voyage en cabine de conduite d'un train</h1>
-                <button id="crl">Conducteurs</button>
-                <button id="choix">Choix</button>
 
-                <div class="photos">
-                    <img class="blond" src="./Angelique-images/blond.jpg" alt="Blond">
-                    <img class="brun" src="./Angelique-images/brun.jpg" alt="Brun">
-                    <video class="choixA" controls width="250">
-                        <source  src="./Roue/BlondBrun.mp4" type="video/mp4">
-                        Sorry, your browser doesn't support embedded videos.
-                    </video>
-                </div>
             </div>
             <div class="tab-content" id="accomodation">
-                <h1>VALISES</h1>
-                <div class="valise">
-                    <img class="valiseA" alt="Valise d'Alban">
-                    <button id="addOn">Téléchargement Add ons</button>
-                    <img class="train" src="./Angelique-images/train.jpeg" alt="Petit train">
+                <h1 class="red">Choix de la compagnie aérienne</h1>
+
+
+                <div class="vol">
+                    <!-- <img class="lac" src="./Ched/lac.jpeg" alt="Lac au canada"> -->
+                    <h3>D'où partez-vous</h3>
+                    <select name="Number" id="number">
+                        <option value=""></option>
+                        <option value="one">Orly</option>
+                        <option value="two">Roissy</option>
+                    </select>
+                    <h3>Où allez-vous</h3>
+                    <select name="Number" id="number">
+                        <option value=""></option>
+                        <option value="Montreal">Montréal</option>
+                        <option value="Toronto">Toronto</option>
+                        <option value="vancouver">Vancouver</option>
+                    </select>
+
+
+                    <h3>Nombre de personnes</h3>
+                    <select class="Number" name="Number" id="number">
+                        <option value=""></option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                    </select>
+                    <div>
+                        <input type="checkbox" id="scales" name="scales">
+                        <label for="scales">Vol direct</label>
+                    </div>
+                    <h3>Choix de la compagnie</h3>
+                    <select name="compagnie" id="compagnie">
+                        <option value=""></option>
+                        <option value="airFrance">Air France</option>
+                        <option value="airCanada">Air Canada</option>
+                        <option value="seniors">Compagnie pour les séniors</option>
+                    </select><br>
+                    <button class="paiement">PAIEMENT</button>
+                </div>
+                <div class="image">
+                    <img class="france" src="./Ched/France.jpeg" alt="Photo Air France">
+                    <img class="canada" src="./Ched/canada.jpg" alt="Photo Air Canada">
+                    <img class="senior" src="./Ched/grabatair.jpeg" alt="Photo Grabat'air">
+
                 </div>
             </div>
-            <div class="tab-content" id="suitcases">
-                <h1>ORFEA</h1>
-
-            </div>
-            <div class="tab-content" id="excursion">
-                <h1>EXCURSIONS</h1>
-            </div>
-            <div class="tab-content" id="age">
-
-                <H1>ORFEA</H1>
-
-            </div>
+            <section class="popup">
+                <img class="carteBleue" src="./Ched/carteBleue.jpeg" alt="Carte Bleue"><br>
+                <button id="planB">PLAN B</button>
+            </section>
         </div>
+        <div class="tab-content" id="suitcases">
+            <h1>ORFEA</h1>
+
+        </div>
+        <div class="tab-content" id="excursion">
+            <h1>EXCURSIONS</h1>
+        </div>
+        <div class="tab-content" id="age">
+
+            <H1>ORFEA</H1>
+
+        </div>
+    </div>
     </div>
 
     <script src="./angelique.js"></script>
