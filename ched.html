@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./angelique.css">
+    <link rel="stylesheet" href="./ched.css">
 </head>
 
 <body>
-    <button id="return">RETOUR</button>
-    <!-- <img class="fondEcran" src="./Images/TGV.jpg" alt=""> -->
+    <button id="return1">RETOUR</button>
+
     <div class="content">
         <ul class="tabs">
             <li class="active"><a href="#agence">Canada</a></li>
@@ -22,7 +22,20 @@
         <div class="tabs-content">
             <img class="drapeau" src="./Ched/drapeau.png" alt="drapeau canada">
             <div class="tab-content active" id="agence">
+                <div class="canada1">
+                    <button class="buttonElan">Elan</button>
+                    <button class="buttonCalgary">Calgary</button>
+                    <button class="buttonBaleine">Tadoussac : Baleine</button>
+                    <button class="buttonPhoques">Tadoussac : Les Phoques</button>
+                    <button class="buttonGael">Concert de Céline Dion</button>
 
+                    <img class="elan" src="./Ched/elan.jpeg" alt="Elan">
+                    <img class="baleine" src="./Ched/baleine.jpeg" alt="baleine">
+                    <img class="phoques" src="./Ched/phoques.jpeg" alt="phoques">
+                    <img class="calgary" src="./Ched/calgary.jpeg" alt="calgary">
+                    <img class="gael" src="./Ched/gael.jpeg" alt="calgary">
+
+                </div>
             </div>
             <div class="tab-content" id="accomodation">
                 <h1 class="red">Choix de la compagnie aérienne</h1>
@@ -31,13 +44,14 @@
                 <div class="vol">
                     <!-- <img class="lac" src="./Ched/lac.jpeg" alt="Lac au canada"> -->
                     <h3>D'où partez-vous</h3>
+                    <div class="price"  ></div>
                     <select name="Number" id="number">
                         <option value=""></option>
                         <option value="one">Orly</option>
                         <option value="two">Roissy</option>
                     </select>
                     <h3>Où allez-vous</h3>
-                    <select name="Number" id="number">
+                    <select name="Number" id="number1">
                         <option value=""></option>
                         <option value="Montreal">Montréal</option>
                         <option value="Toronto">Toronto</option>
@@ -46,7 +60,7 @@
 
 
                     <h3>Nombre de personnes</h3>
-                    <select class="Number" name="Number" id="number">
+                    <select class="Number" name="Number" id="numberpers">
                         <option value=""></option>
                         <option value="one">1</option>
                         <option value="two">2</option>
@@ -61,15 +75,18 @@
                         <option value="airFrance">Air France</option>
                         <option value="airCanada">Air Canada</option>
                         <option value="seniors">Compagnie pour les séniors</option>
+                        <option value="canadair">Autres</option>
                     </select><br>
-                    <button class="paiement">PAIEMENT</button>
+
                 </div>
                 <div class="image">
                     <img class="france" src="./Ched/France.jpeg" alt="Photo Air France">
                     <img class="canada" src="./Ched/canada.jpg" alt="Photo Air Canada">
                     <img class="senior" src="./Ched/grabatair.jpeg" alt="Photo Grabat'air">
+                    <img class="canadair" src="./Ched/canadair.jpeg" alt="Photo Canad'air">
 
                 </div>
+                <button class="paiement">PAIEMENT</button>
             </div>
             <section class="popup">
                 <img class="carteBleue" src="./Ched/carteBleue.jpeg" alt="Carte Bleue"><br>
@@ -77,7 +94,7 @@
             </section>
         </div>
         <div class="tab-content" id="suitcases">
-            <h1>ORFEA</h1>
+
 
         </div>
         <div class="tab-content" id="excursion">
@@ -85,13 +102,13 @@
         </div>
         <div class="tab-content" id="age">
 
-            <H1>ORFEA</H1>
+
 
         </div>
     </div>
     </div>
 
-    <script src="./angelique.js"></script>
+    <script src="./ched.js"></script>
 </body>
 
 </html>

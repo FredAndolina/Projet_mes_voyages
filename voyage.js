@@ -3,9 +3,10 @@
 // const bVoyage3 = document.querySelector("#angelique")
 
 
-const bVoyage1 = document.querySelector("#angelique")
+const bVoyage1 = document.querySelector("#anais")
+
 bVoyage1.addEventListener("click", function () {
-location.href = "./angelique.html"}
+location.href = "./ched.html"}
 )
 // buttonTrain.addEventListener("click", function () {
 //     location.href = "./anais.html"}
@@ -17,5 +18,5 @@ location.href = "./angelique.html"}
 
 // bVoyage3.addEventListener("click", function () {
 // location.href = "./angelique.html"}
-)
+
 

@@ -47,8 +47,9 @@ a {
 }
 
 .roues1{
-    display: flex;
+    display: inline;
     justify-content: center;
+    text-align: center;
     width: 300px;
     height: 300px;
 }
@@ -63,8 +64,5 @@ h1{
 #anais{
     margin: 0 92px;
 }
- .roues1{
-     width: 300px;
-     height: auto;
- }
+
 
