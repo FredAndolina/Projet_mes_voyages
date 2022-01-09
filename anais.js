@@ -2,7 +2,7 @@
 let tabs = document.querySelectorAll('.tabs a')
 
 for (let i = 0; i < tabs.length; i++) {
-    tabs[i].addEventListener("click", function (e) {
+    tabs[i].addEventListener("click", function (event) {
         const li = this.parentNode
         const div = this.parentNode.parentNode.parentNode
 
@@ -117,7 +117,7 @@ buttonAge.addEventListener("click", function () {
     let age = prompt("Quel âge as-tu ma petite Anais?");
     console.log("click")
     if(age <= 13){ alert("Prépare-toi pour ton voyage")}
-else{alert("Tu es trop vielle Anais je suis dans l'obligation de fermer la page");
+else{alert("Tu es trop vieille Anais je suis dans l'obligation de fermer la page");
 location.href = "./page404.html"}}
 )
 retour.addEventListener("click", function () {
@@ -143,9 +143,9 @@ const button4 = document.querySelector(".btn4")
 button4.addEventListener('click', function () {
     const firstQuestion = document.querySelector(".firstQuestion")
     const newCard = document.createElement("div")
-    const question1 = prompt ("Aimes-tu être seule ?")
+    const question1 = prompt ("Aimes-tu la vie ?")
     newCard.classList.add("first")
-    newCard.textContent = "Aimes-tu être seule ? : " + question1
+    newCard.textContent = "Aimes-tu la vie ? : " + question1
     firstQuestion.appendChild(newCard)
     button4.style.display ="none"
 })
@@ -167,9 +167,9 @@ const button2 = document.querySelector(".btn2")
 button2.addEventListener('click', function () {
     const firstQuestion = document.querySelector(".firstQuestion")
     const newCard = document.createElement("div")
-    const question1 = prompt ("Où aimes-tu te ballader ?")
+    const question1 = prompt ("Où aimes-tu te balader ? les bois - la ville")
     newCard.classList.add("first")
-    newCard.textContent = "Où aimes-tu te ballader  ? : " + question1
+    newCard.textContent = "Où aimes-tu te balader  ? : " + question1
     firstQuestion.appendChild(newCard)
     button2.style.display ="none"
 })

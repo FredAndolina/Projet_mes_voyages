@@ -47,16 +47,26 @@ compagnie.addEventListener("change", function (event) {
 
 
     // senior.style.display = "none"
-
+  
     if (event.target.value === "airFrance") {
         france.style.display = "block";
         color.style.backgroundColor = "black";
+        color.style.display = "block"
+        price.style.display = "block"
+
     } else if (event.target.value === "airCanada") {
         canada.style.display = "block";
         color.style.backgroundColor = "black"
+        color.style.display = "block"
+        price.style.display = "block"
+
+
     } else if (event.target.value === "seniors") {
         senior.style.display = "block";
         color.style.backgroundColor = "black"
+        color.style.display = "block"
+        price.style.display = "block"
+
     } else if (event.target.value === "canadair") {
         canadair.style.display = "block";
         color.style.backgroundColor = "black"; 
@@ -87,9 +97,8 @@ buttonElan.addEventListener("click", function () {
     calgary.style.display = "none"
     phoques.style.display = "none"
     gael.style.display = "none"
-    image.style.opacity = "0.5"
     elan.style.display = "block"
-    elan.style.opacity ="none"
+    
 })
 
 const baleine = document.querySelector(".baleine")

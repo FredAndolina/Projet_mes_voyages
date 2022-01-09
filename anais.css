@@ -1,64 +1,69 @@
-body{
-   /* background-color: wheat; */
-   background-image: url(./Images-Anais/foret.jpeg) ;
-   background-size: cover;
+body {
+    /* background-color: wheat; */
+    background-image: url(./Images-Anais/foret.jpeg);
+    background-size: cover;
 }
-.tab-content{
+
+.tab-content {
     display: none;
 }
 
-.tab-content.active{
+.tab-content.active {
     display: inline-block;
 }
 
-.tabs   .active a{
+.tabs .active a {
     color: red;
 }
+
 /* Mise en page */
-.image404{
+.image404 {
     width: 1300px;
     height: 600px;
 }
-body{
+
+body {
     font-family: sans-serif;
     padding: 50px;
 }
-.center{
+
+.center {
     display: flex;
     justify-content: center;
 }
 
-   ul, il{
-       margin: 0;
-       padding: 0;
-       list-style: none;
-   }
+ul,
+il {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-   .tabs li{
-       display: inline;
-   }
+.tabs li {
+    display: inline;
+}
 
-   .tabs a{
-       display: inline-block;
-       background-color: rgb(236, 230, 230);
-       box-shadow: 0 1px 3px black, 0 1px 3px grey ;
-       padding: 10px 15px;
-   }
+.tabs a {
+    display: inline-block;
+    background-color: rgb(236, 230, 230);
+    box-shadow: 0 1px 3px black, 0 1px 3px grey;
+    padding: 10px 15px;
+}
 
-   a{
-       text-decoration: none;
-       color: black ;
-   }
+a {
+    text-decoration: none;
+    color: black;
+}
 
-   .tabs .active a{
-       background-color: white;
-   }
+.tabs .active a {
+    background-color: white;
+}
 
-   .tabs-content{
-       display: none;
+.tabs-content {
+    display: none;
     margin: 20px 0 0 0;
     padding: 20px;
-    background-color:white;
+    background-color: white;
     width: 900px;
     height: 550px;
     box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
@@ -68,14 +73,26 @@ body{
     color: grey;
     text-align: center;
     border-radius: 25px;
-   }
+}
 
-   h1{
-       font-size: 35px ;
-   }
+h1 {
+    font-size: 35px;
+}
 
 /* agence de voyage */
-.driver, .travel, .collation, .hotel, .etiquette, .bleu, .rose, .autre, .barbecue, .terre, .etiquette2, .cadavre, .driver1{
+.driver,
+.travel,
+.collation,
+.hotel1,
+.etiquette,
+.bleu,
+.rose,
+.autre,
+.barbecue,
+.terre,
+.etiquette2,
+.cadavre,
+.driver1 {
     margin: 10px 0 0 0;
     display: none;
     width: 250px;
@@ -86,26 +103,27 @@ body{
     -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
 }
 
- 
+
 /* valises  */
 
-.valise{
-    background-image: url(./Angelique-images/Valise-fermee.jpg);
+.valise {
+    background-image: url(./Ched/Valise-fermee.jpg);
     margin: 20px 0 0 0;
-    width: 200px;
-    height: 150px;
+    width: 450px;
+    height: 350px;
     background-size: cover;
 }
 
-.valise:hover{
-    background-image: url(./Images-Anais/valise-anais.jpeg);
+.valise:hover {
+    background-image: url(./Images-Anais/valise.jpeg);
     margin: 20px 0 0 0;
-    width: 250px;
-    height: 250px;
+    width: 450px;
+    height: 400px;
     background-size: cover;
 }
 
-.image, .imageHotel{
+.image,
+.imageHotel {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -120,7 +138,7 @@ body{
     height: 350px;
 }
 
-.covid{
+.covid {
     position: absolute;
     top: 160px;
     left: 80px;
@@ -130,23 +148,28 @@ body{
     -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
     -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
 }
-#covidAutre{
+
+#covidAutre {
     background-color: thistle;
 }
-.bleu1{
+
+.bleu1 {
     color: blue;
 }
-.blanc1{
+
+.blanc1 {
     color: white;
 }
-.rouge1{
+
+.rouge1 {
     color: red;
 }
-.etiquette{
+
+.etiquette {
     position: absolute;
-    top: 150px;
+    top: 250px;
     left: 100px;
-    width: 300px;
+    width: 250px;
     height: 150px;
     box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
     -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
@@ -154,7 +177,7 @@ body{
 }
 
 
-.francis{
+.francis {
     position: absolute;
     top: 160px;
     left: 100px;
@@ -164,7 +187,8 @@ body{
     -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
     -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
 }
-.van{
+
+.van {
     display: none;
     position: absolute;
     top: 150px;
@@ -178,7 +202,7 @@ body{
 
 
 /* Questions */
-.question{
+.question {
     font-size: 15px;
     position: absolute;
     top: 150px;
@@ -187,7 +211,7 @@ body{
     height: 150px;
 }
 
-.first{  
+.first {
     text-align: center;
     background-color: black;
     color: white;
@@ -197,10 +221,10 @@ body{
 
 /*  Carte les Ardennes */
 
-.ardennes{
-    position : absolute;
+.ardennes {
+    position: absolute;
     display: none;
-    top: 300px ;
+    top: 300px;
     right: 130px;
     width: 200px;
     height: 150px;
@@ -210,7 +234,7 @@ body{
     -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
 }
 
-.mairie{
+.mairie {
     position: absolute;
     top: 500px;
     right: 80px;
@@ -221,14 +245,21 @@ body{
     -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
 }
 
-.algo{
+.algo {
     position: absolute;
     top: 100px;
     right: 80px;
 }
 
-button{
+button {
     box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
     -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
-    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75); 
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+}
+
+.hotel{
+    position: relative;
+    top: 10px;
+    width: 600px;
+    height: 300px;
 }

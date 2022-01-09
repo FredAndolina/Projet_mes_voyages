@@ -4,6 +4,9 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.title {
+    height: 800px;
+}
 
 /* body */
 body {
@@ -34,8 +37,6 @@ body {
 
 li {
     display: inline;
-
-
 }
 
 a {
@@ -46,23 +47,133 @@ a {
     text-decoration: none;
 }
 
-.roues1{
-    display: inline;
-    justify-content: center;
+.roues1 {
+    margin: 0 auto;
     text-align: center;
     width: 300px;
     height: 300px;
 }
 
+video {
+    margin: 0 auto;
+}
 
-h1{
+
+h1 {
     text-align: center;
     font-size: 40px;
 }
 
 
-#anais{
+#anais {
     margin: 0 92px;
 }
 
 
+.headBurger {
+    margin: 0 auto;
+    width: 65px;
+    height: 40px;
+    position: absolute;
+    left: 480px;
+    top: 100px;
+    display: none;
+    background-color: #0c5d56;
+}
+
+.burger {
+    width: 60px;
+    height: 5px;
+    background-color: white;
+    border-radius: 15%;
+    margin: 5px 0 5px 0;
+}
+
+@media screen and (max-width:700px) {
+    .partagez {
+        display: none;
+    }
+
+    .nav {
+        display: none
+    }
+
+    .partagez2 {
+        display: none;
+    }
+
+    .headBurger {
+        display: block;
+    }
+
+    .contact {
+        display: none;
+    }
+}
+
+/* Footer */
+.footertitle,
+titleTravel {
+    padding: 30px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+#firstName,
+#lastName {
+    width: 200px;
+    margin: 0 0 20px 0;
+}
+
+.footColor {
+    marging: 0 0 0 10px;
+    color: white;
+    background-color: #0c5d56;
+    width: 100%;
+    height: 400px;
+}
+
+.partage {
+    display: flex;
+    justify-content: space-around;
+}
+
+.partagez {
+    display: block;
+    justify-content: center;
+    font-size: 40px;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+
+h4 {
+    margin: 0;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    font-size: 25px;
+}
+
+.contact {
+    width: 400px;
+    height: 500px;
+}
+
+#name {
+    color: black;
+}
+
+.cont {
+    margin: 20px 0 0 0;
+}
+
+.contactUs1 {
+    margin-bottom: 40px;
+}

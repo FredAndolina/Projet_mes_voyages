@@ -205,25 +205,39 @@ padding: 0;
 
 @media screen and (max-width: 1225px) {
     .flexCard {
-        height: 1450px;
+        margin: 0;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: space-around;
     }
-
+.travel2{
+    display: none;
+}
     .lastArticle {
-        height: 1800px;
+        margin: 0;
+        height: 800px;
+    }
+    .carte2{
+        display: none;
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 700px) {
     .footColor {
         height: 900px;
     }
 
+    .flexCard {
+        /* padding: 40px 0; */
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 1500px;
+    }
+
     .partage {
-        height: 600px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -232,42 +246,36 @@ padding: 0;
 
     .partagez {
         width: 500px;
-        height: auto;
+        height: 400px;
     }
 
     .footertitle {
         margin: 0 30px;
     }
-    .repas1{
+    .travel2, .antille, .carte3{
         display: none;
     }
-}
-@media screen and (max-width: 1100px) {
-    .footColor {
-        height: 900px;
+    .savoieImg {
+        width: 28px;
+        height: auto;
+        margin: 20px 0 30px;
     }
-
-    .partage {
-        height: 600px;
+    .travel{
+        margin: 40px 0 0 0;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         align-items: center;
+        height: 1200px;
     }
-
-    .partagez {
-        width: 500px;
-        height: auto;
+    .travelSection1{
+        height: 600px;
     }
-
-    .footertitle {
-        margin: 0 30px;
+    #lastArticles{
+        margin: 0;
     }
-    .repas1{
-        display: none;
-    }
-
+  
 }
+
 /* travel */
 .travel {
     margin: 0 0 20px 0;
@@ -278,11 +286,11 @@ padding: 0;
     justify-content: space-around;
 }
 
-.savoie {
+.savoie, .antille {
     margin: 50px 0 0 0;
     background: linear-gradient(white, rgb(224, 215, 215));
     width: 280px;
-    height: 5OO0px;
+    height: 5OOpx;
     box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
     -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
     -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
