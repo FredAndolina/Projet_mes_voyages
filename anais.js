@@ -41,7 +41,7 @@ const buttonAge = document.querySelector("#age")
 const travel = document.querySelector(".travel")
 const driver = document.querySelector(".driver")
 const collation = document.querySelector(".collation")
-const hotel = document.querySelector(".hotel")
+const hotel = document.querySelector(".hotel1")
 const etiquette = document.querySelector(".etiquette")
 const bleu = document.querySelector(".bleu")
 const rose = document.querySelector(".rose")
@@ -52,6 +52,8 @@ const etiquette2 = document.querySelector(".etiquette2")
 const cadavre = document.querySelector(".cadavre")
 const van = document.querySelector(".van")
 const retour = document.querySelector("#return")
+const all = document.querySelector(".all")
+
 
 
 
@@ -109,7 +111,12 @@ buttonCollation.addEventListener("click", function () {
 })
 
 buttonHotel.addEventListener("click", function () {
-    hotel.style.display = "block";
+    all.style.display = "block";
+})
+
+all.addEventListener("mouseover", function () {
+    all.src = "./Images-Anais/piscine.jpeg";
+    all.style.width="200px"
 })
  
 
@@ -130,9 +137,9 @@ const button0 = document.querySelector(".btn0")
 button0.addEventListener('click', function () {
     const firstQuestion = document.querySelector(".firstQuestion")
     const newCard = document.createElement("div")
-    const question1 = prompt ("Quel est ton département préféré ?")
+    const question1 = prompt ("Quel est ton département ?")
     newCard.classList.add("first")
-    newCard.textContent = "Quel est ton département préféré ? : " + question1
+    newCard.textContent = "Quel est ton département ? : " + question1
     firstQuestion.appendChild(newCard)
     button0.style.display ="none"
     ardennes.style.display="block"

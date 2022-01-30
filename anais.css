@@ -1,7 +1,7 @@
 body {
     /* background-color: wheat; */
     background-image: url(./Images-Anais/foret.jpeg);
-    background-size: cover;
+    /* background-size: cover; essai git */
 }
 
 .tab-content {
@@ -103,7 +103,16 @@ h1 {
     -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
 }
 
-
+.all {
+    margin: 10px 0 0 0;
+    display: none;
+    width: 650px;
+    height: 250px;
+    background-size: cover;
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+}
 /* valises  */
 
 .valise {
@@ -263,3 +272,4 @@ button {
     width: 600px;
     height: 300px;
 }
+

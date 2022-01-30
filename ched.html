@@ -14,9 +14,9 @@
 
     <div class="content">
         <ul class="tabs">
-            <li class="active"><a href="#agence">Canada</a></li>
-            <li><a href="#accomodation">Vol</a></li>
-            <li><a href="#suitcases">Excursions</a></li>
+            <li class="active"><a href="#agence">EXCURSIONS</a></li>
+            <li><a href="#accomodation">VOL</a></li>
+            <li><a href="#suitcases">RESTAURANTS</a></li>
 
         </ul>
         <div class="tabs-content">
@@ -56,8 +56,61 @@
                         <option value="Montreal">Montréal</option>
                         <option value="Toronto">Toronto</option>
                         <option value="vancouver">Vancouver</option>
-                    </select>
-
+                    </select><br><br>
+                   
+                      
+                    <link href=
+                'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css'
+                          rel='stylesheet'>
+                      
+                    <script src=
+                "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" >
+                    </script>
+                      
+                    <script src=
+                "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" >
+                    </script>
+                </head>
+                  
+                <div class="dateA">
+                    Date de départ </div>
+                    <input type="text" id="my_date_picker">
+                   
+                    <script>
+                        $(document).ready(function() {
+                          
+                            $(function() {
+                                $( "#my_date_picker" ).datepicker();
+                            });
+                        })
+                    </script>
+                   
+                       
+                     <link href=
+                 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css'
+                           rel='stylesheet'>
+                       
+                     <script src=
+                 "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" >
+                     </script>
+                       
+                     <script src=
+                 "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" >
+                     </script>
+                 </head>
+                   
+                 <div class="dateA">Date de retour </div>
+                     <input type="text" id="my_date_picker2">
+                    
+                     <script>
+                         $(document).ready(function() {
+                           
+                             $(function() {
+                                 $( "#my_date_picker2" ).datepicker();
+                             });
+                         })
+                     </script>
+ 
 
                     <h3>Nombre de personnes</h3>
                     <select class="Number" name="Number" id="numberpers">
